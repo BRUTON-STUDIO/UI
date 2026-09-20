@@ -23,7 +23,7 @@ local m = (game:GetService("Players")).LocalPlayer;
 m:GetMouse();
 local o = {
 		Themes = { 
-    BloodyGreen = {
+    BRUTON = {
         ["Color Hub 1"] = ColorSequence.new({ 
             ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 80)),
             ColorSequenceKeypoint.new(0.5, Color3.fromRGB(150, 0, 0)),
@@ -31,13 +31,12 @@ local o = {
         }),
         ["Color Hub 2"] = Color3.fromRGB(12, 8, 8),
         ["Color Stroke"] = Color3.fromRGB(0, 255, 100),
-        ["Color Theme"] = Color3.fromRGB(0, 255, 100),
+        ["Color Theme"] = Color3.fromRGB(180, 0, 0),
         ["Color Text"] = Color3.fromRGB(255, 255, 255),
         ["Color Dark Text"] = Color3.fromRGB(180, 40, 40)
     }
-},
-		Info = { Version = "1.1.0" },
-		Save = { UISize = { 500, 280 }, TabSize = 160, Theme = "BloodyGreen" },
+},		Info = { Version = "1.1.0" },
+		Save = { UISize = { 500, 280 }, TabSize = 160, Theme = "BRUTON" },
 		Settings = {},
 		Connection = {},
 		Instances = {},
