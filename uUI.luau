@@ -22,16 +22,22 @@ local r = game:GetService("CoreGui");
 local m = (game:GetService("Players")).LocalPlayer;
 m:GetMouse();
 local o = {
-		Themes = { BlackWhite = {
-				["Color Hub 1"] = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(.5, Color3.fromRGB(200, 200, 200)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)) }),
-				["Color Hub 2"] = Color3.fromRGB(10, 10, 10),
-				["Color Stroke"] = Color3.fromRGB(255, 255, 255),
-				["Color Theme"] = Color3.fromRGB(255, 255, 255),
-				["Color Text"] = Color3.fromRGB(255, 255, 255),
-				["Color Dark Text"] = Color3.fromRGB(190, 190, 190),
-			} },
+		Themes = { 
+    BloodyGreen = {
+        ["Color Hub 1"] = ColorSequence.new({ 
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 80)),
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(150, 0, 0)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 80))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(12, 8, 8),
+        ["Color Stroke"] = Color3.fromRGB(0, 255, 100),
+        ["Color Theme"] = Color3.fromRGB(0, 255, 100),
+        ["Color Text"] = Color3.fromRGB(255, 255, 255),
+        ["Color Dark Text"] = Color3.fromRGB(180, 40, 40)
+    }
+},
 		Info = { Version = "1.1.0" },
-		Save = { UISize = { 500, 280 }, TabSize = 160, Theme = "BlackWhite" },
+		Save = { UISize = { 500, 280 }, TabSize = 160, Theme = "BloodyGreen" },
 		Settings = {},
 		Connection = {},
 		Instances = {},
