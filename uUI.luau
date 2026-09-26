@@ -36,7 +36,7 @@ local o = {
         ["Color Dark Text"] = Color3.fromRGB(180, 40, 40)
     }
 },		Info = { Version = "1.1.0" },
-		Save = { UISize = { 500, 280 }, TabSize = 160, Theme = "BRUTON" },
+		Save = { UISize = { 425, 210 }, TabSize = 160, Theme = "BRUTON" },
 		Settings = {},
 		Connection = {},
 		Instances = {},
@@ -801,9 +801,7 @@ function o.MakeWindow(V, r)
 	local Z5 = {};
 	local X5 = false;
 	function Z5.CloseBtn(Z)
-		Z5:Dialog({ Title = "LOC4T HUB", Text = "Tem certeza de que o script est\195\161 fechado?  ", Options = { { "sim", function()
-						C:Destroy();
-					end }, { "n\195\163o" } } });
+		C:Destroy();
 	end;
 	function Z5.MinimizeBtn(Z)
 		if not z then
@@ -2211,7 +2209,7 @@ function o.MakeWindow(V, r)
 			local G = X[1] or X.Name or (X.Title or "Text Box");
 			local V = X.Desc or (X.Description or "");
 			local r = X[2] or (X.Default or "");
-			local m = X[5] or (X.PlaceholderText or "LOC4T");
+			local m = X[5] or (X.PlaceholderText or "BRUTON");
 			local o = X[3] or (X.ClearText or false);
 			local N = v:GetCallback(X, 4);
 			if type(r) == "string" then
