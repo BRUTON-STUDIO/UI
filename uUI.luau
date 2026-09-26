@@ -25,15 +25,15 @@ local o = {
 		Themes = { 
     BRUTON = {
         ["Color Hub 1"] = ColorSequence.new({ 
-            ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 80)),
-            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(150, 0, 0)),
-            ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 80))
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 220)),
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(90, 0, 110)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 100))
         }),
-        ["Color Hub 2"] = Color3.fromRGB(12, 8, 8),
-        ["Color Stroke"] = Color3.fromRGB(0, 255, 100),
-        ["Color Theme"] = Color3.fromRGB(180, 0, 0),
+        ["Color Hub 2"] = Color3.fromRGB(8, 14, 10),
+        ["Color Stroke"] = Color3.fromRGB(0, 255, 120),
+        ["Color Theme"] = Color3.fromRGB(255, 0, 220),
         ["Color Text"] = Color3.fromRGB(255, 255, 255),
-        ["Color Dark Text"] = Color3.fromRGB(180, 40, 40)
+        ["Color Dark Text"] = Color3.fromRGB(200, 200, 205)
     }
 },		Info = { Version = "1.1.0" },
 		Save = { UISize = { 425, 210 }, TabSize = 160, Theme = "BRUTON" },
