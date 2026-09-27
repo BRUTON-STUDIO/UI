@@ -1025,17 +1025,17 @@ function o.MakeWindow(V, r)
 				return game:HttpGet(X);
 			end);
 		if not G or not V or V == "" then
-			o:CreateNotification({ Title = "Load Tab Failed", Content = "Could not reach the provided tab link.", Duration = 6 });
+			o:CreateNotification({ Title = "BRUTON HUB", Content = "التحميل رح ياخذ وقت اكثر", Duration = 6 });
 			return nil;
 		end;
 		local r, m = loadstring(V);
 		if not r then
-			o:CreateNotification({ Title = "Load Tab Failed", Content = "The remote tab script failed to compile: " .. tostring(m), Duration = 6 });
+			o:CreateNotification({ Title = "BRUTON HUB", Content = "صار خطا في سحب الاوامر كلها من: " .. tostring(m), Duration = 3 });
 			return nil;
 		end;
 		local N, k = pcall(r, Z5, o);
 		if not N then
-			o:CreateNotification({ Title = "Load Tab Failed", Content = "The remote tab script raised an error while running.", Duration = 6 });
+			o:CreateNotification({ Title = "BRUTON HUB", Content = "اعادة تشغيل سكربت اذا صار خطا بالتحميل اعتذار مسبق مني", Duration = 6 });
 			return nil;
 		end;
 		return k;
